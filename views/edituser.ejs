@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Edit user <%=udata1.username%></h1>
+    <form action="/updateUser" method="post">
+   <input type="text"  value="<%= udata1.username %>" name="username">
+   <input type="email"  value="<%= udata1.email %>" name="email">
+   <input type="password"  value="<%= udata1.password %>" name="password">
+   <input type="hidden"  value="<%= udata1._id %>" name="uid">
+   <input type="submit" >
+</form>
+</body>
+</html>
